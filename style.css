@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@400;700&display=swap');
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    height: 100vh;
+    font-family: 'Shantell Sans', sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+header.navbar-container {
+    max-width: 1350px;
+    width: 100%;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-block: 1rem;
+    z-index: 999;
+    background-color: #FFB100;
+    position: fixed;
+    top: 0;
+}
+
+header.navbar-container .logo img {
+    width: 70px;
+}   
+
+header.navbar-container .nav-list ul {
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem 1rem;
+}
+   
+header.navbar-container .nav-list li {
+    list-style-type: none;
+}
+  
+header.navbar-container .nav-list li a {
+    text-decoration: none;
+    font-size: 1.05rem;
+    font-weight: 500;
+    color: white;
+    padding: .5rem 1.5rem;
+    border-radius: 999px;
+    transition: all .2s ease-in-out;
+}
+  
+header.navbar-container .nav-list li:hover a {
+    background-color: white;
+    color: #FFB100;
+}
+
+.zoom {
+    width: 500px;
+}
+
+#beranda {
+    display: flex;
+}
+
+main {
+    max-width: 1200px;
+    width: 100%;
+    margin-inline: auto;
+    padding: 2rem 4rem;
+    flex: 1;   
+    display: flex;
+    align-items: center;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    position: relative;
+}
+
+main .content {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+    
+main .content .content-description {
+    flex: 1 1;
+    padding-right: 100px;
+}
+    
+main .content .content-description .title {
+    font-size: 3.5rem;
+    margin-block: 1rem;
+}
+    
+main .content .content-description p {
+    line-height: 1.7rem;
+    font-size: 1.2rem;
+}
+    
+main .content .content-description a {
+    padding: .5rem 2.5rem;
+    margin-block-start: 1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1rem;
+    font-family: 'Shantell Sans', sans-serif;
+    color: white;
+        
+    border: 3px solid transparent;
+    border-radius: 999px;
+    background-color: #FFB100;
+    cursor: pointer;
+    transition: all .15s ease-in;
+}
+    
+main .content .content-description a:hover {
+    border: 3px solid #FFB100;
+    color: #FFB100;
+    background-color: transparent;
+}
+    
+main .content .content-image {
+    flex: 1;
+    display: flex;
+}
+    
+main .content .content-image img {
+    margin: auto;
+    min-width: 250px;
+    width: 300px;
+}
+
+aside {
+    border: 3px solid transparent;
+    border-radius: 20px;
+    background-color: #F2F7A1;
+}
+
+aside h2 {
+    margin-left: 100px;
+}
+
+#layanan {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
+    background-color: #F2F7A1;
+    margin: 10px;
+    position: relative;
+}
+
+article {
+    flex: 1;
+    display: flex;
+}
+
+article img {
+    width: 200px;
+}
+
+#layanan .fasilitas {
+    display: flex;
+    justify-content: center;
+}
+
+#layanan .needs {
+    width: 400px;
+    margin: 30px;
+    justify-content: center;
+}
+
+#layanan .kesehatan {
+    width: 400px;
+    margin: 30px;
+    justify-content: center;
+}
+
+#info {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
+    background-color: #F2F7A1;
+    margin: 10px;
+    width: 100%;
+}
+
+article .domestik, .anggora, .siam, .persia, .sphynx, .bengal {
+    display: flex;
+    align-items: center;
+}
+
+article .domestik-desc, .anngora-desc, .siam-desc, .persia-desc, .sphynx-desc, .bengal-desc {
+    flex: 1 1;
+}
+    
+article .title {
+    font-size: 1.2rem;
+    margin-block: 1rem;
+    margin: 20px;
+}
+
+article p {
+    line-height: 1.5rem;
+    font-size: 0.9rem;
+    margin: 20px;
+}
+
+article img {
+    display: flex;
+    margin: 20px;
+}
+
+footer {
+    background-color: #FFBF00;
+}
+
+footer h5 {
+    margin: 20px;
+    font-size: 1rem;
+}
+
+footer ul {
+    padding-left: 0;
+    display: flex;
+    justify-content: left;
+    gap: 1rem;
+    margin-left: 25px;
+}
+
+footer li {
+    list-style-type: none;
+}
+
+@media screen and (max-width: 1200px) {
+    header.navbar-container {
+      flex-direction: column;
+    }
+   
+    header.navbar-container .nav-list ul {
+      flex-wrap: wrap;
+      column-gap: .5rem;
+    }
+   
+    main {
+      padding: 1rem 3rem;
+    }
+   
+    main .content {
+      flex-direction: column;
+      gap: 2rem;
+      margin-top: 200px;
+    }
+
+    section {
+        padding: 1rem 3rem;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    section .fasilitas{
+        flex-direction: row;
+    }
+
+    section .fasilitas .needs, .kesehatan {
+        max-width: fit-content;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header.navbar-container {
+        flex-direction: column;
+    }
+   
+    header.navbar-container .nav-list ul {
+      flex-wrap: wrap;
+      column-gap: .5rem;
+    }
+   
+    main {
+      padding: 1rem 3rem;
+    }
+   
+    main .content {
+      flex-direction: column;
+      gap: 2rem;
+      margin-top: 200px;
+    }
+
+    section {
+        padding: 1rem 3rem;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    section .fasilitas{
+        flex-direction: column;
+    }
+
+    section .fasilitas .needs, .kesehatan {
+        max-width: fit-content;
+    }
+
+    section .domestik, .anggora, .siam, .persia, .sphynx, .bengal {
+        flex-direction: column;
+    }
+}
